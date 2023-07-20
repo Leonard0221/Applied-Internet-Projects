@@ -1,0 +1,65 @@
+{{!< countAdd}}
+
+<form action="/dictionary" method="GET">
+  <input id="search-input" name="data" placeholder="Enter your Emotion..."><input id="search-bt" type="submit" name="data" value="search">
+</form>
+
+<ul id="dictionary-list">
+    {{#each dictionary}}
+    <li>
+        {{this.value}} : {{this.emotions}}
+    </li>
+    {{/each}}
+</ul>
+
+<form action="/dictionary" method="POST">
+  <input type='text' name="emojiInput" placeholder="Add your Emoji..."><input type='text' name="emojiValue" placeholder="Add your description....">
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- layout file -->
+{{!-- {{> head}}
+
+<body>
+  <div class="container">
+    {{> header}}
+
+    <h1>Dictionary</h1>
+
+    <ul>
+      {{#each newArray}}
+        <li>
+          <h2>{{this.value}}</h2>
+          <p>Emotions: {{this.emotions}}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</body> --}}

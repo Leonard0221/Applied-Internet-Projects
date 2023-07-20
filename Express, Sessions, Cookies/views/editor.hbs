@@ -1,0 +1,44 @@
+<form action="/editor" method="GET">
+    {{!-- <label for="editor"></label> --}}
+    <style>
+    .input_box {
+        display: block;
+        vertical-align: top;
+        position: absolute;
+        right: 50%;
+        margin-top: 300px;
+        width: 30%;
+        height: 250px;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 16px;
+        resize: none;
+    }
+    .view_box {
+        position: absolute;
+        background-color: #f5e56c;
+        right: 20%;
+        margin-top: 300px;
+        width: 30%;
+        height: 250px;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 16px;
+        resize: none;
+    }
+    .button {
+        position: absolute;
+        right: 50%;
+        margin-top: 580px;
+    }
+    </style>
+    <div><textarea id="editor" name="editor" class="input_box" placeholder="Enter your Text Message..."></textarea></div>
+    <div><input type="submit" class="button" value="submit" ></div>
+</form>
+  <textarea id="story" class="view_box" name="story" placeholder="View Area, Don't modify>>" style="background-color:#f5e56c">{{transWord}}</textarea>

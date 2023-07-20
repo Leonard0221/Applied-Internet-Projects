@@ -1,0 +1,98 @@
+[
+    {
+        "emotions": ["angry", "mad"],
+        "value": "(ू˃̣̣̣̣̣̣︿˂̣̣̣̣̣̣ ू)"
+    },
+    {
+        "emotions": ["frustrated"],
+        "value": "(　ﾟДﾟ)＜!!"
+    },
+    {
+        "emotions": ["upset", "infuriated"],
+        "value": "ヽ(≧Д≦)ノ"
+    },
+    {
+        "emotions": ["excited"],
+        "value": "ヾ(@^▽^@)ノ"
+    },
+    {
+        "emotions": ["puzzled", "lost"],
+        "value": "(◎_◎;)"
+    },
+    {
+        "emotions": ["dorky", "goofy", "funny"],
+        "value": "( ┐΄✹ਊ✹)┐"
+    },
+    {
+        "emotions": ["insane", "weird"],
+        "value": "(｡☉౪ ⊙｡)"
+    },
+    {
+        "emotions": ["crazy"],
+        "value": "ヘ（。□°）ヘ"
+    },
+    {
+        "emotions": ["thrilled", "elevated"],
+        "value": "(*≧∀≦*)"
+    },
+    {
+        "emotions": ["hyped"],
+        "value": "╰(✧∇✧╰)"
+    },
+    {
+        "emotions": ["happy", "amazing"],
+        "value": "(*^▽^*)"
+    },
+    {
+        "emotions": ["hungry"],
+        "value": "v(۝)v"
+    },
+    {
+        "emotions": ["indifferent"],
+        "value": "乁( ◔ ౪◔)ㄏ"
+    },
+    {
+        "emotions": ["love"],
+        "value": "(♡°▽°♡)"
+    },
+    {
+        "emotions": ["meh", "dunno", "shrug", "clueless"],
+        "value": "ʅ（‾◡◝）ʃ"
+    },
+    {
+        "emotions": ["pained"],
+        "value": "ヘ（。□°）ヘ"
+    },
+    {
+        "emotions": ["sad", "unhappy", "depressed"],
+        "value": "(︶︹︺)"
+    },
+    {
+        "emotions": ["crying"],
+        "value": "(个_个)"
+    },
+    {
+        "emotions": ["shy"],
+        "value": "(#^.^#)"
+    },
+    {
+        "emotions": ["sickness"],
+        "value": "(๑-﹏-๑)"
+    },
+    {
+        "emotions": ["smiley", "nice"],
+        "value": "( ⋂‿⋂’)"
+    },
+    {
+        "emotions": ["sobbing"],
+        "value": ".·´¯`(>▂<)´¯`·."
+    },
+    {
+        "emotions": ["surprised", "astonished"],
+        "value": "（・□・；）"
+    },
+    {
+        "emotions": ["intrigued"],
+        "value": "(•᷉ुε ू•᷈,)"
+    }
+]
