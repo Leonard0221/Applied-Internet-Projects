@@ -1,0 +1,28 @@
+{
+  "name": "homework03-leonard0221",
+  "version": "1.0.0",
+  "description": "Github Username : Leonard0221 <br /> From Leonard Shi bs4297 <br /> Homework #03",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework03-Leonard0221.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework03-Leonard0221/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework03-Leonard0221#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.34.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.1"
+  }
+}
