@@ -1,0 +1,27 @@
+<h2>Sign Up, Staff!</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="signup-staff">
+	<div>
+		<label for="name">Username:</label>
+		<input type="text" name="name" value="">
+	</div>
+	<div>
+		<label for="email">Email:</label> 
+		<input type="email" name="email" value="">
+	</div>
+	<div>
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="">
+	</div>
+    <div>
+		<label for="phoneNumber">Phone Number:</label>
+		<input type="text" name="phoneNumber" value="">
+	</div>
+    <div>
+		<label for="dateOfBirth">Date of Birth:</label>
+		<input type="date" name="dateOfBirth" value="">
+	</div>
+	<div><input type="submit" value="Sign Up"></div>
+</form>

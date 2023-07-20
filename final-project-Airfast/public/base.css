@@ -1,0 +1,113 @@
+/* container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 90%;
+}
+    
+.centered {
+    text-align: center;
+}
+
+.form1 {
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    right: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form1 input[type="text"],
+.form1 input[type="date"] {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.table1 {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    right: 20px;
+    border-collapse: collapse;
+    width: 96%;
+    table-layout: fixed;
+    overflow-x: auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+nav {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #42a5f5;
+}
+h2 {
+    top: 150px;
+    left: 50px;
+}
+
+.brand-logo {
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0 20px;
+    float: left;
+}
+
+.right {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+}
+
+.right li {
+    float: left;
+}
+
+.right li a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.right li.active a {
+    background-color: #1976D2;
+}
+
+text1{
+    font-size: 16px;
+    text-align: center;
+} */
+
+input[type="checkbox"] {
+    appearance: checkbox, radio!important;
+}

@@ -1,0 +1,21 @@
+body {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	background-color: lightblue;
+}
+
+td, th { border: 1px solid #CCC; height: 30px;}
+
+th {
+    background: #F3F3F3;
+    font-weight: bold;
+}
+
+td {
+    background: #FAFAFA;
+    text-align: center;
+	
+}
+h1, h3{
+    text-align: center;
+}
+

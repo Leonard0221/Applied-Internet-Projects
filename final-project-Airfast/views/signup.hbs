@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        .text1 {
+            position: absolute;
+            color: gray;
+            font-size: 16px;
+            top: 100px;
+            right: 800px;
+        }
+        .button1 button {
+            position: absolute;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            top: 200px;
+            right: 750px;
+        }
+        .button2 button {
+            position: absolute;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            top: 250px;
+            right: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="text1">
+            <h2>SIGN UP AS:</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <form method="POST">
+                <div class="button1">
+                    <button type="submit" name="submit" value="signup-user">User</button>
+                </div>
+                <br>
+                <br>
+                <div class="button2">
+                    <button id="staff-button" type="submit" name="submit" value="signup-staff">Staff</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script> 
+        const staffButton = document.getElementById('staff-button');
+        staffButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const key = prompt("Please enter the access key");
+            if (key === 'abc') {
+                window.location.href = "/signup-staff";
+            } else {
+                alert("Access denied. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
+

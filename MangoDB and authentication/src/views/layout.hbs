@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+
+<div id="outer">
+<header>
+<nav>
+		<span class="home-link"><a href="/">Home</a> {{#if user}}| <a href="/article/add">Add</a>{{/if}}</span>
+	<span class="login-status">
+{{#if user}}
+<!--<span class="success">Logged in as: {{user.username}}</span>-->
+Logged in as: {{user.username}} <form method="POST" action="/logout" id="logout-form"> | <button>logout</button></form>
+{{else}}
+ <a href="/register">Register</a> or <a href="/login">Login</a>
+{{/if}}
+	</span>
+</nav>
+</header>
+
+<h1>Too Long; Didn't Read</h1>
+
+<div class="content">
+A link aggregation site. Kind of like a terrible version of another site whose name rhymes with "Fed it.".
+
+{{{ body }}}
+
+</div>
+</body>
+</html>

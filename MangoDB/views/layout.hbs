@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
+
+		<link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<style>
+</style>
+<div id="container">
+	<header>
+			<h1><span>AIT</span>Y-THREE ISSA B</h1>
+			<h3>An anonymous course review site.</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="/">All reviews</a></li>
+			<li><a href="/reviews/mine">My reviews</a></li>
+			<li><a href="/reviews/add">Add review!</a></li>
+		</ul>
+		<div class="about-session">Your session's total page visits: {{ count }} </div>
+	</nav>
+	<div id="content">
+		{{{ body }}}
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AirFast</title>
+	<!-- Importing Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Importing Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a class="brand-logo">AirFast</a>
+			<a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				{{#if user}}
+					{{#if isStaff}}
+						<li><a href="/">Home</a></li>
+						<li><a href="/flight">Flight</a></li>
+						<li><a href="/logout">Logout</a></li>
+					{{else}}
+						<li><a href="/">Home</a></li>
+						<li><a href="/myFlight">My Flight</a></li>
+						<li><a href="/logout">Logout</a></li>
+					{{/if}}
+				{{else}}
+					<li><a href="/">Home</a></li>
+					<li><a href="/signup">Sign Up</a></li>
+					<li><a href="/login">Sign In</a></li>
+				{{/if}}
+			</ul>
+		</div>
+	</nav>
+<!-- Side Navigation -->
+<ul class="sidenav" id="mobile-demo">
+	{{#if user}}
+		{{#if isStaff}}
+			<li><a href="/">Home</a></li>
+			<li><a href="/flight">Flight</a></li>
+			<li><a href="/logout">Logout</a></li>
+		{{else}}
+			<li><a href="/">Home</a></li>
+			<li><a href="/myFlight">My Flight</a></li>
+			<li><a href="/logout">Logout</a></li>
+		{{/if}}
+	{{else}}
+		<li><a href="/">Home</a></li>
+		<li><a href="/signup">Sign Up</a></li>
+		<li><a href="/login">Sign In</a></li>
+	{{/if}}
+</ul>
+
+<div class="container">
+	{{{body}}}
+</div>
+
+<!-- Importing Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+	// Initialize Side Navigation
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems);
+	});
+</script>
+</body>
+</html> 
+
+
+
+
+
+
+

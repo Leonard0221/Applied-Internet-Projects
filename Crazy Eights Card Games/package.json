@@ -1,0 +1,33 @@
+{
+  "name": "homework01-leonard0221",
+  "version": "1.0.0",
+  "description": "Github Username : Leonard0221 <br /> From Leonard Shi bs4297 <br /> Homework #01 - Crazy Eights",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework01-Leonard0221.git"
+  },
+  "author": "Leonard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework01-Leonard0221/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/homework01-Leonard0221#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.32.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "clear": "^0.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}

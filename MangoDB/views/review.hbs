@@ -1,0 +1,38 @@
+<form method="GET" action="/">
+  <label for="year">Year:</label>
+  <input type="number" name="year" id="year">
+  <label for="professor">Professor:</label>
+  <input type="text" name="professor" id="professor">
+  <label for="semester">Semester:</label>
+  <select name="semester" id="semester">
+    <option value="">All</option>
+    <option value="Summer">Summer</option>
+    <option value="Spring">Spring</option>
+    <option value="Fall">Fall</option>
+    <option value="Winter">Winter</option>
+  </select>
+  <input type="submit" value="Filter">
+</form>
+<table>
+    <tr>
+        <th>Course Number</th>
+        <th>Course Name</th>
+        <th>Semester</th>
+        <th>Year</th>
+        <th>Professor</th>
+        <th>Review</th>
+    </tr>
+    {{#each Review}}
+    <tr>
+        <td>{{this.courseNumber}}</td>
+        <td>{{this.courseName}}</td>
+        <td>{{this.semester}}</td>
+        <td>{{this.year}}</td>
+        <td>{{this.professor}}</td>
+        <td>{{this.review}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+
+

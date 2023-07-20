@@ -1,0 +1,103 @@
+body {
+	height: 100vh;
+	font-family: Garamond, serif;
+	font-size: 1.25em;
+	background-color: #222;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding: none;
+}
+
+.home-link {
+	position: absolute;
+	top: 0.25em;
+	left: 0.75em;
+}
+
+.login-status {
+	position: absolute;
+	top: 0.25em;
+	right: 0.75em;
+}
+
+header {
+	position: relative;
+	background-color: #ccddff;
+	margin: 0px;
+	height: 1.5em;
+	padding: 0.25em 1em 0em 1em;
+	/*text-align: right;*/
+}
+
+nav > a, nav > a:visited {
+	color: black;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#outer {
+	width: 500px;
+	height: 100vh;
+	background-color: #fff;
+	margin: auto;
+	text-align: left;
+}
+
+div.content {
+	padding: 0em 1em 1em 1em;
+}
+
+.note {
+	color:#888; 
+	padding-top: 1em;
+}
+
+.error {
+	background-color: #eecccc;
+	padding: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;	
+}
+
+.success {
+	background-color: #cceecc;
+	padding: 0.25em;
+}
+
+form div {
+	padding-bottom: 0.5em;
+}
+
+textarea {
+	width: 25em;
+	height: 12em;
+}
+
+form textarea, form input {
+	display: block;
+}
+
+input {
+	border: 1px solid #555;
+	font-size: 1em;
+}
+
+#logout-form {
+  font-size: 1em;
+  display:inline;
+}
+
+#logout-form > button {
+  font-size: 1em;
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: Garamond, serif;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}

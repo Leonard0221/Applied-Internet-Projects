@@ -1,0 +1,155 @@
+<style>
+.bt{
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    right: 100px;
+}
+#output1{
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button{
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+
+
+{{#if user}}
+    <p class="flow-text container centered" style="padding-top:30px; color: gray; font-size: 30px;">Welcome to AirFast, {{user.name}} !</p>
+    <button id="myLocationButton" class="button">My Location</button>
+{{else}}
+    <p class="flow-text container centered" style="padding-top:30px; color: gray; font-size: 30px;">Welcome to AirFast!</p>
+{{/if}}
+
+
+
+<script>
+if (!navigator.geolocation){
+    throw new Error("No Geolocation Available")
+}
+
+function success(pos) {
+    const lat = pos.coords.latitude;
+    const lng = pos.coords.longitude;
+    const url = `http://www.openstreetmap.org/#map=16/${lat}/${lng}`;
+    const button = document.getElementById('myLocationButton');
+    button.addEventListener('click', () => {
+        window.location.href = url;
+    });
+    button.disabled = false;
+}
+
+function error(error){
+    console.log(error)
+}
+
+const options = {};
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+/* code inspired by https://openjavascript.info/2022/12/11/map-live-user-location-using-leaflet-js/       */
+
+</script>
+
+<form class="form1" method="GET" action="/">
+    <label for="departCity">Departure City:</label>
+    <input type="text" name="departCity" id="departCity">
+    <label for="departureTime">Departure Date:</label>
+    <input type="date" name="departureTime" id="departureTime">
+    <label for="arrivalCity">Arrival City:</label>
+    <input type="text" name="arrivalCity" id="arrivalCity">
+    <label for="arrivalTime">Arrival Date:</label>
+    <input type="date" id="arrivalTime" name="arrivalTime">
+    <input type="submit" value="Filter">
+</form>
+{{#if isUser}}
+    <table class="table1">
+        <tr>
+            <th>Select</th>
+            <th>Airline Name</th>
+            <th>Flight Number</th>
+            <th>Departure City</th>
+            <th>Departure Airport</th>
+            <th>Departure Time</th>
+            <th>Arrival City</th>
+            <th>Arrival Airport</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+        </tr>
+        {{#each flight}}
+        <tr>
+            <td>
+                <form method="POST" action="/">
+                    <input type="hidden" name="flightIds" value="{{this.flightNumber}}">
+                    <button type="submit" class="bt">select</button>
+                </form>
+            </td>
+            <td>{{this.airlineName}}</td>
+            <td>{{this.flightNumber}}</td>
+            <td>{{this.departCity}}</td>
+            <td>{{this.departureAirport}}</td>
+            <td>{{this.departureTime}}</td>
+            <td>{{this.arrivalCity}}</td>
+            <td>{{this.arrivalAirport}}</td>
+            <td>{{this.arrivalTime}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    
+</form>
+
+{{else}}
+    <table class="table1">
+        <tr>
+            <th>Airline Name</th>
+            <th>Flight Number</th>
+            <th>Departure City</th>
+            <th>Departure Airport</th>
+            <th>Departure Time</th>
+            <th>Arrival City</th>
+            <th>Arrival Airport</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+        </tr>
+        {{#each flight}}
+        <tr>
+            <td>{{this.airlineName}}</td>
+            <td>{{this.flightNumber}}</td>
+            <td>{{this.departCity}}</td>
+            <td>{{this.departureAirport}}</td>
+            <td>{{this.departureTime}}</td>
+            <td>{{this.arrivalCity}}</td>
+            <td>{{this.arrivalAirport}}</td>
+            <td>{{this.arrivalTime}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+{{/if}}
+
+

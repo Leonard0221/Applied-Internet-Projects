@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<rect x="120" y="236.6" width="100" height="216.6" fill="red">
+</rect>
+<rect x="220" y="221.04" width="100" height="201.04" fill="yellow">
+</rect>
+<rect x="320" y="76.66" width="100" height="56.66" fill="blue">
+</rect>
+<rect x="420" y="23.73" width="100" height="3.73" fill="green">
+</rect>
+<rect x="520" y="30.91" width="100" height="10.91" fill="pink">
+</rect>
+<text x="120" y="32" fill="black" fontsize="12">Manhattan,Brooklyn,Queens,Staten Island,Bronx
+</text>
+<text x="120" y="44" fill="black" fontsize="12">21660,20104,5666,373,1091
+</text>
+</svg>
