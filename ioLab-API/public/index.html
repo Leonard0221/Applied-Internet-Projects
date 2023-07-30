@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Race Game</title>
+    <style>
+      .play-area {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        border: 2px solid black;
+      }
+      .racer {
+        position: absolute;
+        top: 0;
+        font-size: 40px;
+      }
+      .player1 {
+        left: 0;
+      }
+      .player2 {
+        top: 45px;
+        right: 0;
+      }
+      .winner {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Race Game</h1>
+    <button class="player1Btn">Move Tears of Joy &rarr;</button>
+    <div class="play-area">
+      <div class="racer player1">&#128514;</div>
+      <div class="racer player2">&#128561;</div>
+    </div>
+    <button class="player2Btn">Move Face Screaming &rarr;</button>
+    <div class="winner"></div>
+
+    <script type="module" src="/racer.js"></script>
+  </body>
+</html>
